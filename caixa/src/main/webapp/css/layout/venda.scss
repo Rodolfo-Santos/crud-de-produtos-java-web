@@ -1,0 +1,97 @@
+
+.venda-conteudo {
+    padding-left: 0px!important;
+    padding-top: 100px;
+    min-height: 90vh;
+}
+
+.input-venda {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid rgba(255, 255, 255, 0.4) 1px;
+    padding: 4px;
+    border-radius: 0px;
+    color: $cor-auxiliar;
+}
+
+.input-venda:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #fff 1px;
+    border-radius: 0px;
+    box-shadow: 0 0 0 0;
+    color: $cor-auxiliar;
+    outline: 0;
+}
+.input-id::-webkit-outer-spin-button,
+.input-id::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.input-id[type=number] {
+    -moz-appearance:textfield;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.line {
+    display: flex;
+    flex-flow: row;
+    h3 {
+        color: darken($cor-auxiliar, 10);
+        padding: 10px;
+        width: 70%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    span {
+        position: relative;
+        top: -50%;
+        width: 100%;
+        content: '';
+        border-bottom: solid 1px #fff;
+    }
+}
+
+.info-resultado {
+    padding: 0px;
+    li {
+        list-style: none;
+        display: flex;
+
+        span {
+            margin-right: 10px;
+            color: $cor-secundaria;
+        }
+    }
+
+    ul {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.input-small {
+    width: 70px;
+}
+
+.tela-direita {
+    width: 100%;
+
+}
