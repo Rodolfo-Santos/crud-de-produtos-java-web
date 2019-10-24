@@ -65,10 +65,8 @@
 
 					<li
 						class="animated fadeInLeft delay-01s mb-3 d-flex justify-content-between">
-						<label for="nome" class="mr-2">Descrição:</label> <textarea
-							class="w-100 input-produto" name="descricao" required>
-                            	${ produto.descricao }
-                          </textarea>
+						<label for="nome" class="mr-2">Descrição:</label> <input type="text"
+							class="w-100 input-produto" name="descricao" value="${ produto.descricao }" required>     	
 					</li>
 
 				</ul>

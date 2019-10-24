@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Out-2019 às 01:17
+-- Tempo de geração: 24-Out-2019 às 19:52
 -- Versão do servidor: 10.4.6-MariaDB
 -- versão do PHP: 7.3.9
 
@@ -25,35 +25,36 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `estoque`
+-- Estrutura da tabela `produto`
 --
 
-CREATE TABLE `estoque` (
+CREATE TABLE `produto` (
   `id` int(11) NOT NULL,
-  `nome` varchar(45) DEFAULT NULL,
   `descricao` varchar(255) DEFAULT NULL,
-  `unidade` varchar(45) DEFAULT NULL,
-  `preco` varchar(45) DEFAULT NULL,
-  `quantidade` int(255) DEFAULT NULL,
-  `total` double DEFAULT NULL
+  `nome` varchar(255) DEFAULT NULL,
+  `preco` double NOT NULL,
+  `quantidade` int(11) NOT NULL,
+  `total` double NOT NULL,
+  `unidade` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `estoque`
+-- Extraindo dados da tabela `produto`
 --
 
-INSERT INTO `estoque` (`id`, `nome`, `descricao`, `unidade`, `preco`, `quantidade`, `total`) VALUES
-(1, 'Arroz', 'Gostoso', 'unidade', '2.50', 2, 5),
-(12, 'Arroz', 'asdfasdf', 'Caixa', '2.22', 22, 0);
+INSERT INTO `produto` (`id`, `descricao`, `nome`, `preco`, `quantidade`, `total`, `unidade`) VALUES
+(1, 'Descricao do Produto', 'Produto 01', 2.22, 22, 0, 'Unidade'),
+(5, 'Descricao do Produto', 'Produto 02', 20, 2, 0, 'Unidade'),
+(6, 'Descricao do Produto', 'Produto 03', 20, 222, 0, 'Unidade');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `estoque`
+-- Índices para tabela `produto`
 --
-ALTER TABLE `estoque`
+ALTER TABLE `produto`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -61,10 +62,10 @@ ALTER TABLE `estoque`
 --
 
 --
--- AUTO_INCREMENT de tabela `estoque`
+-- AUTO_INCREMENT de tabela `produto`
 --
-ALTER TABLE `estoque`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+ALTER TABLE `produto`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
