@@ -5,7 +5,7 @@
 
     <main class="container bloco_conteudo">
         <div id="form_login" class="form_login">
-            <h1 class="text-white animated fadeInDown">Gestãoo<span class="text-color2">Real</span></h1>
+            <h1 class="text-white animated fadeInDown">Gestão<span class="text-color2">Real</span></h1>
             <p class="text-muted animated fadeInUp text-justify">Gerencie as vendas de produtos de sua loja. Tenha seu
                 negócio na palma da sua mão. Faça Login para começar.
             </p>
