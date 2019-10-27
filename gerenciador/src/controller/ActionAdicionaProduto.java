@@ -11,7 +11,8 @@ import model.Produto;
 
 public class ActionAdicionaProduto {
 
-	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String nomeProduto = request.getParameter("nome");
 		String unidadeProduto = request.getParameter("unidade");
 		String precoProduto = request.getParameter("preco");

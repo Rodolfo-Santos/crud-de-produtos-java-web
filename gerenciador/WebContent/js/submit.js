@@ -1,3 +1,5 @@
+/*
+ 
 $('#login-form').submit(function (e) {
     $('h1.animated').addClass('fadeOutUp');
     $('p.animated').addClass('fadeOutUp');
@@ -9,9 +11,9 @@ $('#login-form').submit(function (e) {
     let form = this;
     e.preventDefault();
     setTimeout(function () {
-        // form.submit();
-        window.location.href = "entrada?acao=menu";
+        form.submit();
     }, 2000);
 });
 
 
+*/

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:include page="trechos/header.jsp" />
 
+<jsp:include page="trechos/header.jsp" />
 <body class="bg-color1">
 
     <main class="container bloco_conteudo">
@@ -9,21 +9,21 @@
             <p class="text-muted animated fadeInUp text-justify">Gerencie as vendas de produtos de sua loja. Tenha seu
                 negócio na palma da sua mão. Faça Login para começar.
             </p>
-            <form role="form" name="form1" id="login-form" action="" method="post">
+            <form role="form" name="form1" id="login-form" action="entrada?acao=fazendo_login" method="post">
                 <div class="form-group d-flex align-items-end animated fadeInLeft delay-05s">
                     <img src="img/icons/user.svg" class="icon mr-2">
-                    <input type="text" class="form-control input-login" id="user" placeholder="UsuÃ¡rio" name="user">
+                    <input type="text" class="form-control input-login" id="user" placeholder="Usuário" name="login">
                 </div>
                 <div class="form-group d-flex animated fadeInLeft delay-07s">
                     <img src="img/icons/key.svg" class="icon mr-2">
                     <input type="password" class="form-control input-login" id="pwd" placeholder="Senha"
-                        name="password">
+                        name="senha">
                 </div>
                 <div class="my-4 d-flex flex-column-reverse flex-md-row justify-content-between align-items-start">
                     <a href="#" class="text-muted text-decoration animated fadeInUp delay-07s my-3 my-md-0">
                         Esqueci a senha</a>
-                    <button class="btn btn-large btn-color2 animated fadeInDown delay-05s"
-                        id="btn-login">Entrar</button>
+                    <input type="submit" class="btn btn-large btn-color2 animated fadeInDown delay-05s"
+                        id="btn-login" value="Entrar">
                 </div>
             </form>
         </div>

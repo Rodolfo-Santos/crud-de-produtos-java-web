@@ -16,7 +16,6 @@ public class Produto {
 	private double preco;
 	private int quantidade;
 	private String descricao;
-	private double total;
 
 	public int getId() {
 		return id;
