@@ -1,19 +1,16 @@
 package teste;
 
-import java.util.ArrayList;
-
 import model.Usuario;
 import model.Usuarios;
 
 public class executa {
-
 	public static void main(String[] args) {
 		Usuarios usuarios = new Usuarios();
-		ArrayList<Usuario> lista = usuarios.getUsuarios();
-		for(Usuario u : lista) {
-			System.out.println("Login: " + u.getLogin());
-		}
+		Usuario u = new Usuario();
+		u.setLogin("rodolfo");
+		u.setSenha("123");
+		u.setNome("Rodolfo Santos");
 		
-		System.out.println("Fim");
+		usuarios.adiciona(u);
 	}
 }

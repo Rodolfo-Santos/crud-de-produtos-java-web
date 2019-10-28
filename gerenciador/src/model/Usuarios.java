@@ -33,9 +33,9 @@ public class Usuarios {
 	public ArrayList<Usuario> getUsuarios() {
 		EntityManager em = new JPAUtil().getEntityManager();
 		em.getTransaction().begin();
+
 		Query query = em.createQuery("SELECT u FROM Usuario u");
         List<Usuario> usuarios = query.getResultList();
-
         for(Usuario usuario : usuarios){
     		lista.add(usuario);
         }

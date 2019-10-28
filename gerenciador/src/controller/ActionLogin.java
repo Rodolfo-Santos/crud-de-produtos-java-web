@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import model.Usuario;
 import model.Usuarios;
@@ -20,10 +21,11 @@ public class ActionLogin {
 		Usuario usuario = usuarios.existeUsuario(login, senha);
 		
 		if(usuario != null) {
-			System.out.println("Logando com " + login + " e senha: " + senha);
+			HttpSession sessao = request.getSession();
+			sessao.setAttribute("usuarioLogado", usuario);
 			return "redirect:entrada?acao=menu";
 		} else {
-			return "forward:entrada?acao=login";
+			return "redirect:entrada?acao=login";
 		}
 		
 	}

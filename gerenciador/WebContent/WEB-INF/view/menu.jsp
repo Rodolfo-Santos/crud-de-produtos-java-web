@@ -11,8 +11,7 @@
 			<img src="img/fundo02.svg" alt="" class="img-fundo animated fadeInLeft delay-1s">
 
 			<div class="w-100 menu-conteudo">
-				<h1 class="text-white animated bounceInLeft">Bem vindo de volta <span class="text-color2">Rodolfo
-						Santos</span></h1>
+				<h1 class="text-white animated bounceInLeft">Bem vindo de volta <span class="text-color2">${ usuarioLogado.nome }</span></h1>
 				<p class="text-muted text-justify animated bounceInLeft delay-05s">
 					Escolha uma das opções abaixo para continuar. Gerencie seus a entrada e saída de produtos.
 				</p>
