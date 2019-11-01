@@ -40,7 +40,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Configurações</a>
-							<a class="dropdown-item" href="login">Sair</a>
+							<a class="dropdown-item" href="entrada?acao=fazendo_logout">Sair</a>
 						</div>
 					</li>
 				</ul>

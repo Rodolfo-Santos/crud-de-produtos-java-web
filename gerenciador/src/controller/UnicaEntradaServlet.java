@@ -49,7 +49,13 @@ public class UnicaEntradaServlet extends HttpServlet {
 		} else if (paramAcao.equals("fazendo_login")) {
 			ActionLogin acao = new ActionLogin();
 			nome = acao.executa(request, response);
+			
+		}	else if (paramAcao.equals("fazendo_logout")) {
+			ActionLogout acao = new ActionLogout();
+			nome = acao.executa(request, response);
 		}
+		
+		
 
 		else if (paramAcao.equals("cadastro_estoque")) {
 			PageCadastrarProdutoEstoque acao = new PageCadastrarProdutoEstoque();
