@@ -61,6 +61,7 @@
 					<span class="animated fadeInLeft delay-03s"></span>
 				</div>
 				<div class="row px-3 justify-content-between">
+					<!-- 
 					<div class="d-flex text-white align-items-center col-6 col-md-4">
 						<label class="mr-1 text-color2 animated fadeInLeft"
 							for="quantidade">Quantidade:</label> <input type="number"
@@ -72,8 +73,13 @@
 						<label class="mr-1 text-color2 animated fadeInLeft" for="total">Total:</label>
 						<input type="number" class="input-venda input-small text-center">
 					</div>
-					<input type="submit" value="Inserir no Carrinho"
-						class="mt-4 col-12 col-md-4 btn btn-large btn-color2 animated fadeInLeft">
+					 -->
+						<button
+							class="mt-4 col-12 col-md-4 btn btn-large btn-color2 animated fadeInLeft">
+					<a href="entrada?acao=remover_quantidade&id=${ produto.id }">
+							Vender Produto
+					</a>
+						</button>
 				</div>
 			</c:if>
 

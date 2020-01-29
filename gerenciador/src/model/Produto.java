@@ -69,5 +69,8 @@ public class Produto {
 		return preco * quantidade;
 	}
 
-
+	public void removeQuantidade() {
+		int novaQuantidade = this.quantidade = this.quantidade - 1;
+		this.setQuantidade(novaQuantidade);
+	}
 }

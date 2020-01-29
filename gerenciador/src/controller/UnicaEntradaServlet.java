@@ -37,6 +37,10 @@ public class UnicaEntradaServlet extends HttpServlet {
 		} else if (paramAcao.equals("alterando_produto")) {
 			ActionAlteraProduto acao = new ActionAlteraProduto();
 			nome = acao.executa(request, response);
+			
+		} else if (paramAcao.equals("remover_quantidade")) {
+			ActionRemoverQuantidade acao = new ActionRemoverQuantidade();
+			nome = acao.executa(request, response);
 
 		} else if (paramAcao.equals("consultando_produto")) {
 			ActionConsultaProduto acao = new ActionConsultaProduto();
